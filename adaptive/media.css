@@ -106,13 +106,18 @@
 @media (max-width: 495px){
     /* Index.html */
     .header{
+        position: fixed;
+        width: 100%;
         padding: 24px;
-        position: sticky;
         top: 0;
         z-index: 3;
-        background: url('../files/background/bg.png') fixed;
+        background: url('../files/background/bg-dark.png') fixed;
         background-size: cover;
         transition: box-shadow 0.3s ease-in-out;
+    }
+
+    .slider {
+        margin-top: 78px;
     }
 
     .header.shadow {
@@ -243,11 +248,11 @@
 
     .burger {
         position: fixed;
-        top: 26px;
-        right: 26px;
+        top: 24px;
+        right: 20px;
         z-index: 3;
         cursor: pointer;
-        display: block;
+        display: flex;
         border: none;
         background: transparent;
         width: 40px;
@@ -297,7 +302,8 @@
         display: block;
         padding: 85px 0;
         margin: 0;
-        background-color: rgba(213, 0, 56, 1);
+        background: url(../files/background/bg-dark.png);
+        background-size: cover;
         list-style-type: none;
         transform: translateX(103%);
         transition: .3s;
@@ -322,6 +328,19 @@
       
     .burger-checkbox:checked ~ .menu-list {
         transform: translateX(0);
+    }
+
+    .menu-icons {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        margin-top: 20px;
+        padding-bottom: 20px;
+    }
+    
+    .menu-item-icons img {
+        width: 60px;
+        height: 60px;
     }
 
     .map-phone {

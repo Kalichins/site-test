@@ -97,13 +97,18 @@
 
 @media (max-width: 495px) {
     .header{
+        position: fixed;
+        width: 100%;
         padding: 24px;
-        position: sticky;
         top: 0;
         z-index: 3;
-        background: url('../files/background/bg.png') fixed;
+        background: url('../files/background/bg-dark.png') fixed;
         background-size: cover;
         transition: box-shadow 0.3s ease-in-out;
+    }
+
+    .Info-Text {
+        margin-top: 90px;
     }
 
     .header.shadow {
@@ -227,27 +232,44 @@
         top: 0;
         right: 0;
         position: fixed;
-        display: grid;
-        gap: 12px;
-        padding: 42px 0;
+        display: block;
+        padding: 85px 0;
         margin: 0;
-        background-color: rgba(213, 0, 56, 1);
+        background: url(../files/background/bg-dark.png);
+        background-size: cover;
         list-style-type: none;
         transform: translateX(103%);
         transition: .3s;
         max-width: 100vw;
         width: 200px;
-        height: 100vw;
+        height: 100%;
         z-index: 2;
+    }
+
+    .menu-list.shadow {
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.35);
     }
       
     .menu-item {
         display: block;
-        padding: 8px;
+        padding: 20px;
         color: white;
-        font-size: 18px;
+        font-size: 22px;
         text-align: center;
         text-decoration: none;
+    }
+
+    .menu-icons {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        margin-top: 20px;
+        padding-bottom: 20px;
+    }
+    
+    .menu-item-icons img {
+        width: 60px;
+        height: 60px;
     }
       
     .menu-item:hover {
@@ -282,3 +304,4 @@
         margin-left: 30px;
     }
 }
+
