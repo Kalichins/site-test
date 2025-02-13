@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'InkyThinPixels';
+    margin: 0;
+    padding: 0;
+    background: url('files/background/bg.png') fixed;
+    background-size: cover; 
+    color: #fff;
+    overflow-y: scroll;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 20px;
+    position: relative;
+}
+
+.menu-burger{
+    display: none;
+}
+
+/* Хедер */
+.header {
+    display: flex;
+    color: #ffffff;
+    background-color: rgba(0, 0, 0, 0.25);
+}
+
+.logo img {
+    width: 90px;
+    height: 90px;
+}
+
+.logo{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+span{
+    display: none;
+}
+
+.menu ul {
+    display: flex;
+    gap: 50px;
+    list-style: none;
+    padding: 0;
+    left: 2%;
+    position: relative;
+}
+
+.menu a {
+    color: #fff;
+    font-size: 24px;
+}
+
+.icns {
+    display: flex;
+    gap: 30px;
+    position: relative;
+}
+
+.icns img {
+    width: 60px;
+    height: 60px;
+}
+
+@font-face {
+    font-family: 'InkyThinPixels';
+    src: url(font/ljk_Inky-Thin-Pixels.otf) format(opentype);
+}

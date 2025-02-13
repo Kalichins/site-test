@@ -1,0 +1,172 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'InkyThinPixels';
+    margin: 0;
+    padding: 0;
+    background: url('../../files/background/bg.png') fixed;
+    background-size: cover;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 20px;
+    position: relative;
+}
+
+.menu-burger{
+    display: none;
+}
+
+/* Хедер */
+.header {
+    display: flex;
+    color: #ffffff;
+    background-color: rgba(0, 0, 0, 0.25);
+}
+
+.logo img {
+    width: 90px;
+    height: 90px;
+}
+
+.logo{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+span{
+    display: none;
+}
+
+.menu ul {
+    display: flex;
+    gap: 50px;
+    list-style: none;
+    padding: 0;
+    left: 2%;
+    position: relative;
+}
+
+.menu a {
+    color: #fff;
+    font-size: 24px;
+}
+
+.icns {
+    display: flex;
+    gap: 30px;
+    position: relative;
+}
+
+.icns img {
+    width: 60px;
+    height: 60px;
+}
+
+
+.one-text p{
+    margin-left: 850px;
+    margin-top: 50px;
+    position: absolute;
+    font-size: 36px;
+    color: #ffffff;
+}
+
+.two-text p{
+    margin-left: 850px;
+    margin-top: 100px;
+    position: absolute;
+    font-size: 22px;
+    color: #ffffff;
+}
+
+.three-text p{
+    margin-left: 850px;
+    margin-top: 220px;
+    position: absolute;
+    font-size: 36px;
+    color: #ffffff;
+}
+
+.four-text{
+    margin-left: 850px;
+    margin-top: 520px;
+    position: absolute;
+    font-weight: lighter;
+    font-size: 36px;
+    color: #ffffff;
+}
+
+.five-text{
+    margin-left: 850px;
+    margin-top: 580px;
+    position: absolute;
+    font-weight: lighter;
+    font-size: 24px;
+    color: #ffffff;
+}
+
+.button{
+    width: 480px;
+    position: absolute;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+    background-color: rgba(213, 0, 56, 0.96);
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 850px;
+    margin-top: 400px;
+    border-radius: 5px;
+    padding: 6px;
+}
+
+.button p{
+    display: block;
+    color: #ffffff;
+    font-size: 36px;
+    text-decoration: none;
+    position: absolute;
+    
+}
+
+.item{
+    margin-top: 20px;
+}
+
+.item-cart{
+    display: flex;
+    align-items: center;
+    margin-left: 40px;
+    margin-bottom: 10px;
+    justify-content: space-between;
+}
+
+.image img{
+    width: auto;
+    height: 600px;
+    margin-left: 140px;
+    margin-bottom: 10px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+}
+
+@font-face {
+    font-family: 'InkyThinPixels';
+    src: url(../../font/ljk_Inky-Thin-Pixels.otf) format(opentype);
+}

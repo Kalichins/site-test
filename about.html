@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>О нас</title>
+    <link rel="icon" type="image/png" href="files/logo/logo game desk circle.png">
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="adaptive/media-about.css">
+</head>
+<body>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+    let header = document.querySelector(".header");
+    
+    window.addEventListener("scroll", function() {
+        if (window.scrollY > 10) {
+            header.classList.add("shadow"); // Добавляем тень при прокрутке вниз
+        } else {
+            header.classList.remove("shadow"); // Убираем тень, если наверху
+        }
+    });
+});
+    </script>
+
+    <header class="header">
+        <div class="container">
+            <nav class="menu">
+                <ul>
+                    <li><a>О нас</a></li>
+                    <li><a href="new.html">Новинки</a></li>
+                    <li><a href="catalog/catalog.html">Каталог</a></li>
+                </ul>
+            </nav>
+            <div class="logo"> <a href="test.html"> <img src="files/logo/logo game desk circle.png" alt=""> </a> </div>
+            <div class="icns">
+                <a href="https://wa.me/message/ITN7NMUQONU4I1"><img src="files/icons/whatsapp-icon.png" alt="whatsapp"></a>
+                <a href="https://www.instagram.com/game_desk_almaty?igsh=MTQ3cjFsa2p1a254cg%3D%3D&utm_source=qr"><img src="files/icons/instagram.png" alt="instagram"></a>
+            </div>
+            <!-- Название"Только на телефон" -->
+            <span class="name-text">Game Desk</span>
+            <!-- Бургер меню -->
+            <div class="menu-burger">
+                <input type="checkbox" id="burger-checkbox" class="burger-checkbox">
+                <label for="burger-checkbox" class="burger"></label>
+                <ul class="menu-list">
+                    <li><a href="test.html" class="menu-item">Главная</a></li>
+                    <li><a href="about.html" class="menu-item">О нас</a></li>
+                    <li><a href="new.html" class="menu-item">Новинки</a></li>
+                    <li><a href="catalog/catalog.html" class="menu-item">Каталог</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <h1>О нас</h1>
+    <div>
+        <p class="about-text">Наша компания специализируется на производстве игровых столов, создавая удобные, прочные и стильные решения для геймеров, стримеров и профессионалов. Мы разрабатываем столы с учетом эргономики, функциональности и современных тенденций, чтобы обеспечить максимальный комфорт при работе и игре.</p>
+
+        <p class="about-text1">Почему выбирают нас?</p>
+    
+        <p class="about-text-2">✅ Качество и надежность – используем прочные материалы: металлокаркас, МДФ и ЛДСП высокой плотности.</p>
+        <p class="about-text-2">✅ Эргономичный дизайн – удобные выемки, регулировка высоты, подставки под оборудование.</p>
+        <p class="about-text-2">✅ Разнообразие моделей – классические, угловые, регулируемые столы для любых задач.</p>
+        <p class="about-text-2">✅ Современный стиль – сочетание эстетики и практичности, идеально вписывающееся в игровой сетап.</p>
+        <p class="about-text-2">Мы создаем игровые столы, которые помогают достигать новых высот в комфорте и продуктивности! 🚀</p>
+    </div>
+    
+    <div class="fotter">
+        <div class="fotter-text">
+            <a>Game Desk Almaty</a>
+        </div>
+        <div class="contact-info">
+            <p>Контактные информации</p>
+            <a href="tel:+77778409637">+7 777 840 96 37</a>
+        </div>
+    </div>
+
+</body>
