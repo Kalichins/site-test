@@ -188,6 +188,24 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     });
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+    const header = document.querySelector(".header");
+    let lastScrollY = window.scrollY;
+
+    window.addEventListener("scroll", function () {
+        if (window.scrollY > lastScrollY) {
+            // Если скроллим вниз, скрываем хедер
+            header.classList.add("hidden");
+        } else {
+            // Если скроллим вверх, показываем хедер
+            header.classList.remove("hidden");
+            header.classList.add("scrolled");
+        }
+        lastScrollY = window.scrollY;
+    });
+});
+
     </script>
 
 </body>

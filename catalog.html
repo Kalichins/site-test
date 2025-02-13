@@ -32,19 +32,44 @@
         });
     </script>
 
+    <!-- Хэдер -->
     <header class="header">
         <div class="container">
-            <nav class="menu">
+            <!-- Текст -->
+            <nav class="menu" id="menu">
                 <ul>
-                    <li><a href="about.html">О нас</a></li>
-                    <li><a href="new.html">Новинки</a></li>
+                    <li><a href="../about.html">О нас</a></li>
+                    <li><a href="../new.html">Новинки</a></li>
                     <li><a href="catalog.html">Каталог</a></li>
                 </ul>
             </nav>
-            <div class="logo"> <a href="index.html"> <img src="files/logo game desk circle.png" alt=""> </a> </div>
+            <!-- Логотип -->
+            <div class="logo">
+                <a href="../index.html">
+                    <img src="../files/logo/logo game desk circle.png" alt="Logo Game Desk">
+                </a>
+            </div>
+            <!-- Иконки -->
             <div class="icns">
-                <a href="https://wa.me/message/ITN7NMUQONU4I1"><img src="files/whatsapp-icon.png" alt="whatsapp"></a>
-                <a href="https://www.instagram.com/game_desk_almaty?igsh=MTQ3cjFsa2p1a254cg%3D%3D&utm_source=qr"><img src="files/instagram.png" alt="instagram"></a>
+                <a href="https://wa.me/message/ITN7NMUQONU4I1"><img src="../files/icons/whatsapp-icon.png" alt="WhatsApp"></a>
+                <a href="https://www.instagram.com/game_desk_almaty?igsh=MTQ3cjFsa2p1a254cg%3D%3D&utm_source=qr"><img src="../files/icons/instagram.png" alt="Instagram"></a>
+            </div>
+            <!-- Название"Только на телефон" -->
+            <span class="name-text">Game Desk</span>
+            <!-- Бургер меню -->
+            <div class="menu-burger">
+                <input type="checkbox" id="burger-checkbox" class="burger-checkbox">
+                <label for="burger-checkbox" class="burger"></label>
+                <ul class="menu-list">
+                    <li><a href="../index.html" class="menu-item">Главная</a></li>
+                    <li><a href="../about.html" class="menu-item">О нас</a></li>
+                    <li><a href="new.html" class="menu-item">Новинки</a></li>
+                    <li><a href="catalog/catalog.html" class="menu-item">Каталог</a></li>
+                    <div class="menu-icons">
+                        <a class="menu-item-icons" href="https://wa.me/message/ITN7NMUQONU4I1"><img src="../files/icons/whatsapp-icon.png" alt="WhatsApp"></a>
+                        <a class="menu-item-icons" href="https://www.instagram.com/game_desk_almaty?igsh=MTQ3cjFsa2p1a254cg%3D%3D&utm_source=qr"><img src="../files/icons/instagram.png" alt="Instagram"></a>
+                    </div>
+                </ul>
             </div>
         </div>
     </header>
@@ -54,10 +79,8 @@
         <div class="dropdown">
             <button class="dropdown-button" id="dropdownBtn" onclick="toggleDropdown()">Выберите категорию</button>
             <div class="dropdown-content" id="dropdownMenu">
-                <a data-url="catalog-1.html" onclick="selectCategory(this)">Геймерские столы</a>
-                <a data-url="catalog-2.html" onclick="selectCategory(this)">Столы для Компьютерных Клубов</a>
-                <a data-url="catalog-3.html" onclick="selectCategory(this)">Тумбы, Полки, Стелажи</a>
-                <a data-url="catalog-4.html" onclick="selectCategory(this)">Каркасы для Игровых столов</a>
+                <a data-url="Gaming-tables.html" onclick="selectCategory(this)">Геймерские столы</a>
+                <a data-url="Tables-for-Computer-Clubs.html" onclick="selectCategory(this)">Столы для Компьютерных Клубов</a>
             </div>
         </div>
     </div>
