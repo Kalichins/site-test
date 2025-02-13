@@ -20,12 +20,14 @@
                 <ul>
                     <li><a href="../about.html">О нас</a></li>
                     <li><a href="../new.html">Новинки</a></li>
-                    <li><a href="catalog/catalog.html">Каталог</a></li>
+                    <li><a href="catalog.html">Каталог</a></li>
                 </ul>
             </nav>
             <!-- Логотип -->
             <div class="logo">
-                <img src="../files/logo/logo game desk circle.png" alt="Logo Game Desk">
+                <a href="../index.html">
+                    <img src="../files/logo/logo game desk circle.png" alt="Logo Game Desk">
+                </a>
             </div>
             <!-- Иконки -->
             <div class="icns">
@@ -39,7 +41,7 @@
                 <input type="checkbox" id="burger-checkbox" class="burger-checkbox">
                 <label for="burger-checkbox" class="burger"></label>
                 <ul class="menu-list">
-                    <li><a href="../test.html" class="menu-item">Главная</a></li>
+                    <li><a href="../index.html" class="menu-item">Главная</a></li>
                     <li><a href="../about.html" class="menu-item">О нас</a></li>
                     <li><a href="new.html" class="menu-item">Новинки</a></li>
                     <li><a href="catalog/catalog.html" class="menu-item">Каталог</a></li>
@@ -52,6 +54,7 @@
         </div>
     </header>
 
+    <div class="catalog-div">
     <!-- Каталог текст и кнопка -->
     <div class="container-catalog">
         <p class="text">Каталог</p>
@@ -60,8 +63,6 @@
             <div class="dropdown-content" id="dropdownMenu">
                 <a data-url="Gaming-tables.html" onclick="selectCategory(this)">Геймерские столы</a>
                 <a data-url="Tables-for-Computer-Clubs.html" onclick="selectCategory(this)">Столы для Компьютерных Клубов</a>
-                <a data-url="Cabinets-Shelves-Shelving.html" onclick="selectCategory(this)">Тумбы, Полки, Стелажи</a>
-                <a data-url="Frames-for-Gaming-tables.html" onclick="selectCategory(this)">Каркасы для Игровых столов</a>
             </div>
         </div>
     </div>
@@ -87,6 +88,7 @@
             </div>
         </div>
     </section>
+    </div>
 
     <!-- Скрипты -->
     <script>

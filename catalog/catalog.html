@@ -25,7 +25,9 @@
             </nav>
             <!-- Логотип -->
             <div class="logo">
-                <img src="../files/logo/logo game desk circle.png" alt="Logo Game Desk">
+                <a href="../index.html">
+                    <img src="../files/logo/logo game desk circle.png" alt="Logo Game Desk">
+                </a>
             </div>
             <!-- Иконки -->
             <div class="icns">
@@ -39,7 +41,7 @@
                 <input type="checkbox" id="burger-checkbox" class="burger-checkbox">
                 <label for="burger-checkbox" class="burger"></label>
                 <ul class="menu-list">
-                    <li><a href="../test.html" class="menu-item">Главная</a></li>
+                    <li><a href="../index.html" class="menu-item">Главная</a></li>
                     <li><a href="../about.html" class="menu-item">О нас</a></li>
                     <li><a href="new.html" class="menu-item">Новинки</a></li>
                     <li><a href="catalog/catalog.html" class="menu-item">Каталог</a></li>
@@ -52,63 +54,64 @@
         </div>
     </header>
 
-    <!-- Каталог текст и кнопка -->
-    <div class="container-catalog">
-        <p class="text">Каталог</p>
-        <div class="dropdown">
-            <button class="dropdown-button" id="dropdownBtn" onclick="toggleDropdown()">Выберите категорию</button>
-            <div class="dropdown-content" id="dropdownMenu">
-                <a data-url="Gaming-tables.html" onclick="selectCategory(this)">Геймерские столы</a>
-                <a data-url="Tables-for-Computer-Clubs.html" onclick="selectCategory(this)">Столы для Компьютерных Клубов</a>
-                <a data-url="Cabinets-Shelves-Shelving.html" onclick="selectCategory(this)">Тумбы, Полки, Стелажи</a>
-                <a data-url="Frames-for-Gaming-tables.html" onclick="selectCategory(this)">Каркасы для Игровых столов</a>
+    <div class="catalog-div">
+        <!-- Каталог текст и кнопка -->
+        <div class="container-catalog">
+            <p class="text">Каталог</p>
+            <div class="dropdown">
+                <button class="dropdown-button" id="dropdownBtn" onclick="toggleDropdown()">Выберите категорию</button>
+                <div class="dropdown-content" id="dropdownMenu">
+                    <a data-url="Gaming-tables.html" onclick="selectCategory(this)">Геймерские столы</a>
+                    <a data-url="Tables-for-Computer-Clubs.html" onclick="selectCategory(this)">Столы для Компьютерных Клубов</a>
+                </div>
             </div>
         </div>
+
+        <!-- Товары -->
+        <section class="product-slider">
+            <div class="product-wrapper">
+                <div class="product">
+                    <a href="../catalog/desk-model/MaDXRacer ARENA GTS15 CARBON-RED.html"><img src="../files/item-cart/1popular.png" alt="MaDXRacer ARENA GTS15 CARBON-RED"></a>
+                    <p>MaDXRacer ARENA GTS15 CARBON-RED</p>
+                </div>
+                <div class="product">
+                    <a href="../catalog/desk-model/MaDXRacer-PILOT-GTC12B.html"><img src="../files/item-cart/2popular.png" alt="MaDXRacer PILOT GTC12B"></a>
+                    <p>MaDXRacer PILOT GTC12B</p>
+                </div>
+                <div class="product">
+                    <a href="../catalog/desk-model/MaDXRacer-GAMING-DESK-GTT13WHITE-B.html"><img src="../files/item-cart/3popular.png" alt="MaDXRacer GAMING DESK GTT13WHITE-B"></a>
+                    <p>MaDXRacer GAMING DESK GTT13WHITE-B</p>
+                </div>
+                <div class="product">
+                    <a href="../catalog/desk-model/MaDXRacer-PILOT-GTC12G.html"><img src="../files/item-cart/4popular.png" alt="MaDXRacer PILOT GTC12G"></a>
+                    <p>MaDXRacer PILOT GTC12G</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Товары -->
+        <section class="product-slider-2">
+            <div class="product-wrapper">
+                <div class="product">
+                    <a href="../catalog/desk-model/MaDXRacer KING GT15R.html"><img src="../files/item-cart/6popular.png" alt="MaDXRacer KING GT15R"></a>
+                    <p>MaDXRacer KING GT15R</p>
+                </div>
+                <div class="product">
+                    <a href="../catalog/desk-model/MaDXRacer KING GTS15BR"><img src="../files/item-cart/8popular.png" alt="MaDXRacer KING GTS15BR"></a>
+                    <p>MaDXRacer KING GTS15BR</p>
+                </div>
+                <div class="product">
+                    <a href="../catalog/desk-model/MaDXRacer COMFORT GT14NWHITE-B.html"><img src="../files/item-cart/7popular.png" alt="MaDXRacer COMFORT GT14NWHITE-B"></a>
+                    <p>MaDXRacer COMFORT GT14NWHITE-B</p>
+                </div>
+                <div class="product">
+                    <a href="../catalog/desk-model/SPACE TOWER QUATRO-18BLACK-RED"><img src="../files/item-cart/9popular.png" alt="SPACE TOWER QUATRO-18BLACK-RED"></a>
+                    <p>SPACE TOWER QUATRO-18BLACK-RED</p>
+                </div>
+            </div>
+        </section>
     </div>
 
-    <!-- Товары -->
-    <section class="product-slider">
-        <div class="product-wrapper">
-            <div class="product">
-                <a href="../catalog/desk-model/MaDXRacer ARENA GTS15 CARBON-RED.html"><img src="../files/item-cart/1popular.png" alt="MaDXRacer ARENA GTS15 CARBON-RED"></a>
-                <p>MaDXRacer ARENA GTS15 CARBON-RED</p>
-            </div>
-            <div class="product">
-                <a href="../catalog/desk-model/MaDXRacer-PILOT-GTC12B.html"><img src="../files/item-cart/2popular.png" alt="MaDXRacer PILOT GTC12B"></a>
-                <p>MaDXRacer PILOT GTC12B</p>
-            </div>
-            <div class="product">
-                <a href="../catalog/desk-model/MaDXRacer-GAMING-DESK-GTT13WHITE-B.html"><img src="../files/item-cart/3popular.png" alt="MaDXRacer GAMING DESK GTT13WHITE-B"></a>
-                <p>MaDXRacer GAMING DESK GTT13WHITE-B</p>
-            </div>
-            <div class="product">
-                <a href="../catalog/desk-model/MaDXRacer-PILOT-GTC12G.html"><img src="../files/item-cart/4popular.png" alt="MaDXRacer PILOT GTC12G"></a>
-                <p>MaDXRacer PILOT GTC12G</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Товары -->
-    <section class="product-slider-2">
-        <div class="product-wrapper">
-            <div class="product">
-                <a href="../catalog/desk-model/MaDXRacer KING GT15R.html"><img src="../files/item-cart/6popular.png" alt="MaDXRacer KING GT15R"></a>
-                <p>MaDXRacer KING GT15R</p>
-            </div>
-            <div class="product">
-                <a href="../catalog/desk-model/MaDXRacer KING GTS15BR"><img src="../files/item-cart/8popular.png" alt="MaDXRacer KING GTS15BR"></a>
-                <p>MaDXRacer KING GTS15BR</p>
-            </div>
-            <div class="product">
-                <a href="../catalog/desk-model/MaDXRacer COMFORT GT14NWHITE-B.html"><img src="../files/item-cart/7popular.png" alt="MaDXRacer COMFORT GT14NWHITE-B"></a>
-                <p>MaDXRacer COMFORT GT14NWHITE-B</p>
-            </div>
-            <div class="product">
-                <a href="../catalog/desk-model/SPACE TOWER QUATRO-18BLACK-RED"><img src="../files/item-cart/9popular.png" alt="SPACE TOWER QUATRO-18BLACK-RED"></a>
-                <p>SPACE TOWER QUATRO-18BLACK-RED</p>
-            </div>
-        </div>
-    </section>
     <!-- Скрипты -->
     <script>
         function toggleDropdown() {
